@@ -41,13 +41,13 @@ int main(int argc, char** argv)
 			ventanas.push_back(make_pair(a, b));
 		}		
 			
+		/* Ordenar por la primera componente. */
 		sort(ventanas.begin(), ventanas.end(), comp);
-		//~ forn(j, n)
-			//~ cout << ventanas[j].first << " " << ventanas[j].second << endl;
-		//~ cout << endl;
 		
-		long long int res = 0;		
+		long long int res = 0;
 		
+		/* Se corta el cable si la segunda componente del otro
+		 * es más chica que la nuestra. */
 		forn(j, n)
 		{
 			fornx(k, j+1, n)
